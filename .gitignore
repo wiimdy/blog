@@ -3,3 +3,8 @@ themes/*
 docs/
 # .jekyll-cache/
 .vscode/
+
+_site/
+.jekyll-cache/
+.jekyll-metadata/
+.sass-cache
