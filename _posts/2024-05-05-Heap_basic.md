@@ -18,7 +18,7 @@ malloc.c basic glibc 2.27 version
 
 ## 기본적인 구조
 
-### struct malloc_chunk
+## struct malloc_chunk
 
 ```c
 struct malloc_chunk {
@@ -3483,6 +3483,6 @@ if (av != &main_arena)
 
 - av 가 main_arena가 아닐 경우 현재 힙을 확장해서 할당할려고 한다.
 
-### 안해!
+## REFERENCE
 
 <https://youngsouk-hack.tistory.com/56>

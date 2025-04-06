@@ -414,6 +414,6 @@ _IO_switch_to_wget_mode (FILE *fp)
 
 `fp->_wide_data->_IO_write_ptr > fp->_wide_data->_IO_write_base`가 만족될 때 `_IO_WOVERFLOW(fp)`가 호출됩니다.
 
-## Referer
+## REFERENCE
 
 <https://bbs.kanxue.com/thread-273832.htm>

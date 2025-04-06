@@ -307,7 +307,8 @@ typedef int (*_IO_overflow_t) (FILE *, int);
 #define _IO_WOVERFLOW(FP, CH) WJUMP1 (__overflow, FP, CH)
 ```
 
-참고 사이트
+## REFERENCE
+
 <https://samuzora.com/posts/fsop/house-of-apple/>
 
 <https://blog.kylebot.net/2022/10/22/angry-FSROP/>
