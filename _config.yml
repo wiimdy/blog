@@ -118,9 +118,9 @@ comments:
   #   shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # # utterances settings › https://utteranc.es/
   utterances:
-    repo: wiimdy/comments
+    repo: "wiimdy/comments"
     theme: "photon-dark"
-    issue_term: pathname # < url | pathname | title | ...>
+    issue_term: "pathname" # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   # giscus:
   #   repo: # <gh-username>/<repo>
