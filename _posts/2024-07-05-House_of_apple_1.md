@@ -1,8 +1,8 @@
 ---
 title: "House_of_apple_1"
 subtitle: "translate House of apple 1 by roderick01"
-date: 2024-08-23T15:52:32+09:00
-lastmod: 2024-08-23T15:52:32+09:00
+date: 2024-08-24T15:52:32+09:00
+lastmod: 2024-08-24T15:52:32+09:00
 draft: false
 authors: ["wiimdy"]
 description: ""
