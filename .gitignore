@@ -1,5 +1,5 @@
 public/
 themes/*
 docs/
-.jekyll-cache/
+# .jekyll-cache/
 .vscode/
