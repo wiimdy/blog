@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 gem "jekyll-feed"
 gem "html-proofer", "~> 5.0", group: :test
-
+gem "logger"
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"

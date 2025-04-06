@@ -3,7 +3,6 @@ title: "malloc.c basic"
 subtitle: "malloc.c basic"
 date: 2024-08-24T09:23:02+09:00
 lastmod: 2024-08-24T09:23:02+09:00
-draft: false
 authors:
   - wiimdy
 description: "malloc.c basic"
@@ -11,9 +10,8 @@ tags:
   - pwn
 categories:
   - PWN_DOCS
-layout: post
-toc: true
-# featuredImage: "bins1_1.png"
+image:
+  path: /assets/img/pwn/bins1_1.png
 ---
 
 malloc.c basic glibc 2.27 version

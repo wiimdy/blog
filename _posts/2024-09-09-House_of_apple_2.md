@@ -1,20 +1,11 @@
 ---
 title: "House_of_apple_2"
-subtitle: "translate House of apple 2 by roderick01"
 date: 2024-08-23T09:38:12+09:00
-lastmod: 2024-08-23T09:38:12+09:00
-draft: false
 authors: ["wiimdy"]
 description: "translate House of apple 2 by roderick01"
 
 tags: ["pwn", "FSOP"]
 categories: ["PWN_DOCS"]
-layout: post
-toc: true
-hiddenFromHomePage: false
-hiddenFromSearch: false
-featuredImage: ""
-featuredImagePreview: ""
 ---
 
 translate House of apple 2 by roderick01

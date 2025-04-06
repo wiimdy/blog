@@ -2,16 +2,11 @@
 title: "FSOP_BASIC"
 # subtitle: "File struct basic knowledge"
 date: 2024-08-19 15:13:09 +0900
-# lastmod: 2024-08-19T15:13:09+09:00
-draft: false
-layout: post
-toc: true
+
 description: "This post explains what is the file strut pointer and file vtables."
 authors: wiimdy
 tags: [pwn, FSOP]
 categories: [PWN_DOCS]
-
-toc: true
 ---
 
 <!-- This post explains what is the file strut pointer and file vtables.
