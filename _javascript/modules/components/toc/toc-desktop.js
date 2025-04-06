@@ -1,12 +1,12 @@
 export class TocDesktop {
   /* Tocbot options Ref: https://github.com/tscanlin/tocbot#usage */
   static options = {
-    tocSelector: '#toc',
-    contentSelector: '.content',
-    ignoreSelector: '[data-toc-skip]',
-    headingSelector: 'h2, h3, h4',
-    orderedList: false,
-    scrollSmooth: false,
+    tocSelector: "#toc",
+    contentSelector: ".content",
+    ignoreSelector: "[data-toc-skip]",
+    headingSelector: "h2, h3, h4",
+    orderedList: true,
+    scrollSmooth: true,
     headingsOffset: 16 * 2 // 2rem
   };
 

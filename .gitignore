@@ -1,0 +1,5 @@
+public/
+themes/*
+docs/
+.jekyll-cache/
+.vscode/
