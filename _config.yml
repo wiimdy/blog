@@ -27,6 +27,7 @@ url: "https://wiimdy.kr"
 
 plugins:
   - jekyll-feed
+  - jekyll-target-blank
 
 github:
   username: wiimdy # change to your GitHub username
@@ -61,8 +62,7 @@ webmaster_verifications:
 
 # Web Analytics Settings
 analytics:
-  google:
-    id:
+  google: id:BLMQSSBJYT
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
