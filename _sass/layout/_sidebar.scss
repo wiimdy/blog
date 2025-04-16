@@ -16,7 +16,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   height: 100%;
   overflow-y: auto;
   width: v.$sidebar-width;
-  background: var(--sidebar-bg);
+//   background: url(/assets/img/theme/sidebar.jpg);
+    background:  var(--sidebar-bg);
+
+  background-size: 100% 100%;
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -55,8 +58,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
   #avatar {
     display: block;
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
@@ -140,33 +143,79 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
         align-items: center;
         border-radius: 0.75rem;
         font-weight: 600;
-
         &:hover {
-          background-color: var(--sidebar-hover-bg);
-        }
-
-        i {
-          font-size: 95%;
-          opacity: 0.8;
-          margin-right: 1.5rem;
-        }
-
-        span {
-          font-size: 90%;
-          letter-spacing: 0.2px;
-        }
-      }
-
-      &.active {
-        .nav-link {
-          color: var(--sidebar-active-color);
-          background-color: var(--sidebar-hover-bg);
-
-          span {
+            background-color: var(--sidebar-hover-bg);
+            span {
+              opacity: 1;
+              color: rgba(241, 241, 241, 0.99);
+            // color: rgba(37, 2, 173, 0.99);
+            }
+            i {
+              font-size: 100%;
+              opacity: 1;
+              margin-right: 1.5rem;
+              color: rgba(241, 241, 241, 0.99);
+            // color: rgba(37, 2, 173, 0.99);
+            }
+          }
+        // ska
+          i {
+            font-size: 100%;
             opacity: 1;
+            margin-right: 1.5rem;
+            color: rgba(222, 222, 222, 0.99);
+          }
+  
+          span {
+            font-size: 90%;
+            letter-spacing: 0.2px;
+            color: rgba(222, 222, 222, 0.99);
           }
         }
-      }
+  
+        &.active {
+          .nav-link {
+            color: rgba(255, 255, 255, 0.99);
+            background-color: var(--sidebar-hover-bg);
+  
+            span {
+              opacity: 1;
+            //   color: rgba(255, 255, 255, 0.99);  
+            }
+            i {
+              font-size: 100%;
+              opacity: 1;
+              margin-right: 1.5rem;
+            //   color: rgba(255, 255, 255, 0.99);
+            }
+          }
+        }
+    //     &:hover {
+    //       background-color: var(--sidebar-hover-bg);
+    //     }
+
+    //     i {
+    //       font-size: 95%;
+    //       opacity: 0.8;
+    //       margin-right: 1.5rem;
+    //     }
+
+    //     span {
+    //       font-size: 90%;
+    //       letter-spacing: 0.2px;
+    //     }
+    //   }
+
+    //   &.active {
+    //     .nav-link {
+    //       color: var(--sidebar-active-color);
+    //       background-color: var(--sidebar-hover-bg);
+
+    //       span {
+    //         opacity: 1;
+    //       }
+    //     }
+    //   }
 
       &:not(:first-child) {
         margin-top: 0.25rem;
