@@ -1,7 +1,7 @@
 ---
 title: "House_of_apple_1"
 description: "translate House of apple 1 by roderick01"
-date: 2024-08-24T15:52:32+09:00
+date: 2024-08-23T15:52:32+09:00
 authors: ["wiimdy"]
 tags: ["pwn", "FSOP"]
 categories: ["PWN_DOCS"]

@@ -1,20 +1,15 @@
 ---
 title: "malloc.c basic"
-subtitle: "malloc.c basic"
-date: 2024-08-24T09:23:02+09:00
-lastmod: 2024-08-24T09:23:02+09:00
+date: 2024-08-12T09:23:02+09:00
 authors:
   - wiimdy
-description: "malloc.c basic"
+description: "malloc.c glibc 2.27"
 tags:
   - pwn
+  - HEAP
 categories:
   - PWN_DOCS
-image:
-  path: /assets/img/pwn/bins1_1.png
 ---
-
-malloc.c basic glibc 2.27 version
 
 ## 기본적인 구조
 

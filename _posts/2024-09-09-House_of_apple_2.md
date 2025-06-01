@@ -1,6 +1,6 @@
 ---
 title: "House_of_apple_2"
-date: 2024-08-23T09:38:12+09:00
+date: 2024-08-24T09:38:12+09:00
 authors: ["wiimdy"]
 description: "translate House of apple 2 by roderick01"
 
