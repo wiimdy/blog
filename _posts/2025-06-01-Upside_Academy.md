@@ -9,7 +9,7 @@ tags:
 categories:
   - DAILY_LIFE
 image:
-  - path: /assets/img/upside_img/upside_thumbnail. Jpeg
+  - path: "/assets/img/upside_img/upside_thumbnail.Jpeg"
 ---
 
 ## What is the Upside Academy
