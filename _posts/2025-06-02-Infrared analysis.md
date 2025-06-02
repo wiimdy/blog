@@ -1,14 +1,14 @@
 ---
-Title: "Berachain protocol analysis - Infrared"
+title: "Berachain protocol analysis - Infrared"
 date: 2025-06-02 T09:23:02+09:00
-Authors:
+authors:
   - wiimdy
-Description: "Berachain protocol analysis - Infrared"
-Tags:
+description: "Berachain protocol analysis - Infrared"
+tags:
   - Web3
-Categories:
+categories:
   - Web3
-Image:
+image:
   Path: /assets/img/upside_img/upside_thumbnail.jpeg
 ---
 
