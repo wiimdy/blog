@@ -284,3 +284,8 @@ function fetchPrice(address _token) public view returns (uint256) {
 - stakestone - chainlink
 - BB.STONEETH - whitelistvault
 - WETH - chainlink
+
+## Reference
+
+- [Beraborrow Docs](https://beraborrow.gitbook.io/docs)
+- [Beraborrow Onchain code](https://github.com/wiimdy/beraborrow)
