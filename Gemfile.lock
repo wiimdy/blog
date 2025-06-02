@@ -25,6 +25,11 @@ GEM
       traces (~> 0.15)
     base64 (0.2.0)
     bigdecimal (3.1.8)
+    cocos (0.4.0)
+      csvreader (>= 1.2.5)
+      iniparser (>= 1.0.1)
+      tabreader (>= 1.0.1)
+      webclient (>= 0.2.2)
     colorator (1.1.0)
     concurrent-ruby (1.3.5)
     console (1.30.2)
@@ -32,6 +37,12 @@ GEM
       fiber-local (~> 1.1)
       json
     csv (3.3.2)
+    csvjson (1.0.1)
+    csvreader (1.2.5)
+      csvjson (>= 1.0.0)
+      csvyaml (>= 0.1.0)
+      tabreader (>= 1.0.1)
+    csvyaml (1.0.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -60,6 +71,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
+    iniparser (1.0.1)
     io-event (1.10.0)
     jekyll (4.4.1)
       addressable (~> 2.4)
@@ -76,7 +88,6 @@ GEM
       liquid (~> 4.0)
       mercenary (~> 0.3, >= 0.3.6)
       pathutil (~> 0.9)
-      rouge (>= 3.0, < 5.0)
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
@@ -130,11 +141,14 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.4.0)
-    rouge (4.5.1)
+    rouge (4.5.2)
     ruby-rc4 (0.1.5)
     safe_yaml (1.0.5)
     sass-embedded (1.86.3-arm64-darwin)
       google-protobuf (~> 4.30)
+    solidity (0.2.0)
+      cocos
+    tabreader (1.0.1)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     traces (0.15.2)
@@ -143,6 +157,7 @@ GEM
     typhoeus (1.4.1)
       ethon (>= 0.9.0)
     unicode-display_width (2.6.0)
+    webclient (0.2.2)
     webrick (1.9.1)
     yell (2.2.2)
     zeitwerk (2.7.2)
@@ -151,11 +166,16 @@ PLATFORMS
   arm64-darwin
 
 DEPENDENCIES
+  csvjson
+  csvyaml
   html-proofer (~> 5.0)
   jekyll-feed
   jekyll-target-blank
   jekyll-theme-chirpy!
   logger
+  rouge
+  solidity
+  tabreader
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.2.0)

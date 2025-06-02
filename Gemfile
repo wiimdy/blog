@@ -7,6 +7,12 @@ gem "jekyll-feed"
 gem "html-proofer", "~> 5.0", group: :test
 gem "logger"
 gem 'jekyll-target-blank'
+gem 'rouge'
+gem 'csvjson'
+gem 'csvyaml'
+gem 'tabreader'
+gem 'solidity'
+
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
