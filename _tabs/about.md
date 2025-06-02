@@ -64,5 +64,4 @@ Web3 Auditor
 ## 🌍 Language
 
 - Korean: native speaker
-
 - English: Intermediate (work and daily conversation available)
