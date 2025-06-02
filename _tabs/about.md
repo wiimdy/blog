@@ -57,9 +57,8 @@ Web3 Auditor
 
 ## 💻 Skill
 
-- C, C++, Python
-- Pwnable, DF
-- Blockchain
+- C, C++, Python, Solidity
+- Pwnable, DF, Web3
 
 ## 🌍 Language
 
