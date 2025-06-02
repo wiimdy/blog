@@ -9,7 +9,7 @@ tags:
 categories:
   - Web3
 image:
-  path: /assets/img/upside_img/upside_thumbnail.jpeg
+  path: /assets/img/upside_img/infrared_thumbnail.jpeg
 ---
 
 ## What's Infrared
