@@ -10,7 +10,7 @@ categories:
   - WR
 ---
 
-# Broken Dahun’s Heart
+# [Dreamhack] Broken Dahun’s Heart
 
 ![alt text](../assets/img/pwn/BDH/bdh1.webp)
 

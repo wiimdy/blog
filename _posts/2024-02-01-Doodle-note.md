@@ -10,7 +10,7 @@ categories:
   - WR
 ---
 
-# Dreamhack Doodle-note
+# [Dreamhack] Doodle-note
 
 ![alt text](../assets/img/pwn/Doodle_note/doodle1.webp)
 
