@@ -218,6 +218,7 @@ __int64 __fastcall table_print(char *sort_format, Sprint *data, void (__fastcall
 ```
 
 마지막 함수에서 printf 함수를 가져와 sort_format을 출력해준다.
+
 ![alt text](../assets/img/pwn/eztable/ez4.webp)
 
 node_cnt에 증가를 해주는데 이때 단위가 \_WORD이다.
@@ -225,6 +226,7 @@ node_cnt에 증가를 해주는데 이때 단위가 \_WORD이다.
 2byte이므로 1 == 0x10001 이 성립한다.
 
 ![alt text](../assets/img/pwn/eztable/ez5.webp)
+
 head cnt와 tail cnt 비교에서 우회가 가능하고 sort_format 뒤에 printf func pointer가 들어가 잘 조합하면 덮을 수 있다.
 
 ![alt text](../assets/img/pwn/eztable/ez6.webp)

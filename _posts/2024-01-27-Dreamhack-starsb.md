@@ -10,7 +10,7 @@ categories:
   - WR
 ---
 
-# Dreamhack starsb
+# [Dreamhack] starsb
 
 ![alt text](../assets/img/pwn/starsb/1_Ad-rlzh6JrImiwrqrmjzhw.png)
 
@@ -104,7 +104,7 @@ _stack value_
 
 ---
 
-![alt text](/asset/img/pwn/starsb/starsb9.webp)
+![alt text](../assets/img/pwn/starsb/starsb9.webp)
 
 _실행 결과_
 
