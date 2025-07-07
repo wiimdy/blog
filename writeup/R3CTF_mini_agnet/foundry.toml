@@ -1,0 +1,17 @@
+[profile.default]
+src = 'src'
+libs = ['lib']
+fs_permissions = [{ access = 'read-write', path = '/'}]
+ffi = true #
+remappings = [
+    "forge-std=lib/forge-std/src",
+    "forge-ctf=lib/forge-ctf/src",
+]
+
+evm_version = "prague"
+eth_rpc_url = "mainnet"
+
+[rpc_endpoints]
+mainnet = "${RPC}"
+local = "localhost:8545"
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
