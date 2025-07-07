@@ -10,7 +10,7 @@ categories:
   - WR
 ---
 
-### [Dreamhack] ZeroShot
+# [Dreamhack] ZeroShot
 
 ```c
 int __fastcall main()
@@ -80,6 +80,7 @@ size 255 이상 넘길 경우 setup 함수에서 rdi, rax에 stdout 주소 가�
 libc 주소 이걸로 추정 **libc6_2.27–3ubuntu1.4_amd64**
 
 ![alt text](../assets/img/pwn/zeroshot/zeroshot2.webp)
+
 oneshot 가젯 맨 마지막을 맞추기 위해 stack을 조정한다.
 
 ![alt text](../assets/img/pwn/zeroshot/zeroshot3.webp)
