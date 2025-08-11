@@ -7,7 +7,7 @@ description: "[Dreamhack] Hope Delivery v2.0 💌"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] Hope Delivery v2.0 💌

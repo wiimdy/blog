@@ -7,7 +7,7 @@ description: "[Dreamhack] Eztable"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] Eztable

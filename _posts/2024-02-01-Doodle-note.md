@@ -7,7 +7,7 @@ description: "[Dreamhack] Doodle-note"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] Doodle-note

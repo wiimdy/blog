@@ -7,7 +7,7 @@ description: "[Dreamhack] Broken Dahun’s Heart"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] Broken Dahun’s Heart

@@ -7,7 +7,7 @@ description: "[Dreamhack] DecisionTree"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] DecisionTree

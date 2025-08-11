@@ -7,7 +7,7 @@ description: "[Dreamhack] ZeroShot"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] ZeroShot

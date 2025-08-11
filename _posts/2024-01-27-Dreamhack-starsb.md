@@ -7,7 +7,7 @@ description: "[Dreamhack] starsb"
 tags:
   - pwn
 categories:
-  - WR
+  - WU
 ---
 
 # [Dreamhack] starsb
