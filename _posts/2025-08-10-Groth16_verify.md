@@ -162,13 +162,35 @@ EK = E.base_extend(K)
 P = EK(Integer(3050), Integer(5371));   # G1
 Q = EK(Integer(6908)*a**Integer(4), Integer(3231)*a**Integer(3))  # G2
 
+# compute pairing
+# print(P.ate_pairing(Q, n, k, t))
+
 # test pairing properties
 s = Integer(randrange(Integer(1), n))
 print('P = ', P)
 print('Q = ', Q)
-print('(s*P).ate_pairing(Q, n, k, t) = ', (s*P).ate_pairing(Q, n, k, t))
-print('P.ate_pairing(s*Q, n, k, t) = ', P.ate_pairing(s*Q, n, k, t))
-print('P.ate_pairing(s*Q, n, k, t) == P.ate_pairing(Q, n, k, t)**s = ', P.ate_pairing(s*Q, n, k, t) == P.ate_pairing(Q, n, k, t)**s)
+print('s = ', s)
+
+print('\n--- 페어링 속성 테스트 ---')
+# 1. e(P, Q) 계산
+e_P_Q = P.ate_pairing(Q, n, k, t)
+print('e(P, Q) =', e_P_Q)
+
+# 2. e(P, Q)^s 계산 (쌍선형성의 한쪽)
+e_P_Q_s = e_P_Q**s
+print('e(P, Q)^s =', e_P_Q_s)
+
+# 3. e(s*P, Q) 와 e(P, s*Q) 계산 (쌍선형성의 다른쪽)
+#    이 값들이 바로 위에서 계산한 e(P, Q)^s 와 같아야 합니다.
+e_sP_Q = (s*P).ate_pairing(Q, n, k, t)
+e_P_sQ = P.ate_pairing(s*Q, n, k, t)
+print('e(s*P, Q) =', e_sP_Q)
+print('e(P, s*Q) =', e_P_sQ)
+
+# 4. 모든 값이 같은지 최종 확인
+print('\n--- 결과 검증 ---')
+print('e(s*P, Q) == e(P, Q)^s :', e_sP_Q == e_P_Q_s)
+print('e(P, s*Q) == e(P, Q)^s :', e_P_sQ == e_P_Q_s)
 ```
 
 페어링 연산을 SageMath를 이용하여 계산을 해보았습니다.  
@@ -177,16 +199,36 @@ print('P.ate_pairing(s*Q, n, k, t) == P.ate_pairing(Q, n, k, t)**s = ', P.ate_pa
 EK와 E에 모두 속하는 P와 EK의 점인 Q를 설정하여 해당 pairing 연산이 같은 값이 나오는지 확인합니다.
 
 ```text
+sage -python pairing.py
+
 P =  (3050 : 5371 : 1)
 Q =  (6908*a^4 : 3231*a^3 : 1)
-(s*P).ate_pairing(Q, n, k, t) =  3687*a^5 + 5934*a^4 + 3916*a^3 + 1926*a^2 + 6096*a + 3530
-P.ate_pairing(s*Q, n, k, t) =  3687*a^5 + 5934*a^4 + 3916*a^3 + 1926*a^2 + 6096*a + 3530
-P.ate_pairing(s*Q, n, k, t) == P.ate_pairing(Q, n, k, t)**s =  True
+s =  75
+
+--- 페어링 속성 테스트 ---
+e(P, Q) = 6708*a^5 + 4230*a^4 + 4350*a^3 + 2064*a^2 + 4022*a + 6733
+e(P, Q)^s = 2484*a^5 + 143*a^4 + 7249*a^3 + 4560*a^2 + 436*a + 4966
+e(s*P, Q) = 2484*a^5 + 143*a^4 + 7249*a^3 + 4560*a^2 + 436*a + 4966
+e(P, s*Q) = 2484*a^5 + 143*a^4 + 7249*a^3 + 4560*a^2 + 436*a + 4966
+
+--- 결과 검증 ---
+e(s*P, Q) == e(P, Q)^s : True
+e(P, s*Q) == e(P, Q)^s : True
 ```
 
 따라서 \\[e(sP,Q) = e(P, sQ) = e(P,Q)^s\\]가 성립함을 볼 수 있습니다.
 
 ---
+
+## 최소 증명 사이즈
+
+효율적인 SNARK를 위해 최소 증명 사이즈로 맞춰야 합니다.
+
+먼저 선형으로 이루어진 증명식이라면 악의적인 증명자가 쉽게 증명을 조작할 수 있어 qudratic으로 만들어야 합니다.
+
+비대칭 쌍선형 그룹에서 이차식으로 증명식을 만들었다면 페어링 연산을 할 때 두 소스 그룹의 원소 (G1, G2) 가 모두 있어야 합니다.
+
+따라서 각각 그룹의 원소가 1개씩 있는 경우가 존재하는지 아직 모르지만 현재까지는 groth16의 3개의 그룹원소 증명이 최적화되어 있습니다.
 
 ## Further Study
 
