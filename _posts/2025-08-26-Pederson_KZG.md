@@ -134,6 +134,24 @@ committer는 \\[\phi(u) \\] 값과 blinding factor와 u가 결합된 \\[\pi\\] �
 
 ---
 
+## KZG Polynomial Commitment
+
+![](/assets/img/crypto/commit/commit15.png)
+
+KZG Polynomial Commitment는 communication 과정에서 생기는 cost와 complexity를 줄이기 위해 만들어졌습니다.  
+Setup 과정을 통해 한번 쓰고 버리는 값으로 PK를 만들고 PK를 이용해서 commitment를 진행합니다.
+
+다항식 전체를 open하냐, 아님 다항식을 알고 있음을 증명하는 임의의 값에서 평가를 open 하냐 두 가지로 나누어집니다.
+
+첫번째 방식으로 다항식을 공개하여 verifier가 commitment를 계산하여 일치하는지 확인합니다.
+
+다른 방식으로는 committer가 랜덤한 값을 다항식에 evaluate한 값을 만듭니다. \\[\phi(i) = y\\].  
+그럼 이 값이 commit 한 다항식에 넣은 값인지 증명하는 proof 인 \\[\omega_i\\]를 만듭니다.
+
+이 값을 verifier에게 전달하여 \\[\phi(i)\\] 가 commit 한 다항식에 넣은 값이 맞는지 proof 를 통해 검증을 진행합니다.
+
+---
+
 ## Reference
 
 - [Ped92: Non-Interactive and Information-Theoretic Secure Verifiable Secret Sharing](https://link.springer.com/chapter/10.1007/3-540-46766-1_9)
