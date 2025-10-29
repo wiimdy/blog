@@ -32,11 +32,15 @@ Web3 Auditor
 - [2017 ~ 2020] ChungNam High School 57th
 - [2021 ~ now] Korea University Division of Smart Security 1st
 
+## 🏛️ Affiliations
+
+- [Feb 2025 ~ Jun 2025] Upside Academy 2nd
+- [2025 ~ now] Decipher: Blockchain Research Group of Seoul National University 15th
+
 ## 🏢 Job
 
 - [Nov 2021 ~ Dec 2024] 42seoul 5th Cadet
 - [Mar 2023 ~ Oct 2024] Republic of Korea Air Force 844th C.E.R.T.
-- [Feb 2025 ~ Jun 2025] Upside Academy 2nd
 
 ## 📜 Certificate
 
@@ -57,7 +61,7 @@ Web3 Auditor
 
 ## 💻 Skill
 
-- C, C++, Python, Solidity
+- C, C++, Python, Solidity, assembly
 - Pwnable, DF, Web3
 
 ## 🌍 Language
