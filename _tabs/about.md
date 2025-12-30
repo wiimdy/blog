@@ -23,9 +23,9 @@ Web3 Auditor
 ## 📞 Contact
 
 - email: cwm912@korea.ac.kr
-- GitHub: [github.com/wiimdy](http://github.com/wiimdy)
-- LinkedIn: [linkedin.com/in/wiimdy](http://linkedin.com/in/wiimdy)
-- X: [x.com/wiimdy](http://x.com/wiimdy)
+- GitHub: [github.com/wiimdy](https://github.com/wiimdy)
+- LinkedIn: [linkedin.com/in/wiimdy](https://linkedin.com/in/wiimdy)
+- X: [x.com/wiimdy](https://x.com/wiimdy)
 
 ## 🔏 EDUCATION
 
